@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="keywords" content="HTML, CSS, Node.js, SNP, MongoDB">
+  <meta name="author" content="Kamil Rettig">
+  <meta name = "description" content = "A tool for processing of structural variants" >
+  <link rel="shortcut icon" href="/web-page.png"> <!--By DinosoftLabs-->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <title> Licencjat Kamil Rettig </title>
+</head>
+<body>
+  <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active"> <a href="index.html">Home</a></li>
+  </ol>
+</nav>
+
+<form action="/view" method="POST">
+  <div class="container-lg p-3 my-3 border">
+    <h4>Prosze podać dane do wyszukania dokumentów:</h4>
+    <br>
+    <div class="form-row">
+      <div class="form-group col-md-3">
+    <label class="text-info">CHROM:</label>
+  </div>
+  <div class="form-group col-md-3">
+    <input type="text" id="id" name="id" required oninvalid="this.setCustomValidity('Proszę podać chromosom według wzoru: chrM, chrX, albo chr1 itp.')"
+       onvalid="this.setCustomValidity('')"/>
+     </div>
+   </div>
+    <br>
+    <div class="form-row">
+      <div class="form-group col-md-3">
+    <label class="text-info">Pozycja minimalna:</label>
+  </div>
+  <div class="form-group col-md-3">
+     <input type="text" id="pos" name="pos">
+   </div>
+ </div>
+     <br>
+     <div class="form-row">
+      <div class="form-group col-md-3">
+      <label class="text-info">Pozycja maksymalna : </label>
+    </div>
+    <div class="form-group col-md-3">
+     <input type="text" id="pos2" name="pos2">
+   </div>
+   </div>
+    <br>
+    <div class="form-row">
+      <div class="form-group col-md-3">
+      <label class="text-info">FILTER : </label>
+    </div>
+    <div class="form-group col-md-3">
+     <input type="text" id="FILTER" name="FILTER">
+   </div>
+   </div>
+   
+    <br>
+    <button type ="reset" class="btn btn-danger" >Reset</button>
+    <button type ="submit" class="btn btn-primary">Submit</button>
+    <br><br><br>
+  </div>
+ </form>
+
+ <footer class="footer">
+      <div class="align-baseline">
+      <h3 class="text-sm-left">Praca licencjacka: Aplikacja do przetwarzania wariantów strukturalnych przy użyciu bazy danych</h3> <br><br>
+      <h4 class="text-sm-left">Kamil Rettig 141168 </h4>
+    </div>
+    </footer>
+  </body>
+</html>
